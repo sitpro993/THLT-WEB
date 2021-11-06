@@ -1,0 +1,114 @@
+.col-7.text-end {
+  padding: 0;
+}
+.col-7.text-end p {
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: gray;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.col-7.text-end h6 {
+  /* font-size: 11px; */
+  margin-top: 0px;
+  font-weight: 700;
+}
+#date-history {
+  padding: 0;
+}
+
+#triggerId.btn.dropdown-toggle.w-75 {
+  color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #1f1f1f;
+}
+.dropdown-menu a {
+  color: white;
+}
+.dropdown-divider {
+  background-color: gray;
+}
+
+ul.nav.justify-content-between.text-center li {
+  width: calc(100% / 3);
+  border-right: 1px solid gray;
+  background-color: #1f1f1f;
+}
+ul.nav.justify-content-between.text-center li:last-child {
+  width: calc(100% / 3);
+  border-right: none;
+  background-color: #1f1f1f;
+}
+ul.nav.justify-content-between.text-center li.active {
+  background-color: transparent;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs {
+  border: none;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs li button.active {
+  border-radius: 0 0 5px 5px;
+  background-color: transparent !important;
+  border: none;
+  /* border-bottom:3px solid rgb(43, 84, 219); */
+  color: gray;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs li button.active {
+  position: relative;
+  color: #3ea6ff;
+  font-weight: 700;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs li button.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #3ea6ff;
+
+  left: 25%;
+  bottom: 0;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs li button:hover {
+  color: white;
+  transition: 0.4s;
+}
+.border-bottom.border-1.border-light ul.nav.nav-tabs li button {
+  border: none;
+  color: #7d8382;
+  font-size: 14px;
+  padding-top: 25px;
+  margin-right: 30px;
+  padding-bottom: 15px;
+}
+.content-border {
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.col-9 .content-border.p-1 ul li {
+  width: calc(100% / 3);
+}
+.content-border ul button {
+  text-align: center;
+  width: 100%;
+  background-color: #1f1f1f;
+  height: 100px;
+  border-right: 0.5px solid rgb(179, 174, 174);
+}
+.content .content-border ul button.active {
+  border: none;
+  border-right: 0.5px solid rgb(179, 174, 174);
+  border-top: 3px solid #3ea6ff;
+  background-color: #3d3c3c;
+  color: rgb(167, 162, 162);
+}
+/* .col-9 .content-border.p-1 ul button.active:last-child{
+  border: none;
+
+} */
+ #muc-do-xem-content .p-1 ul li {
+  width: calc(100% / 2);
+}

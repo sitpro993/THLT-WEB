@@ -1,0 +1,80 @@
+body {
+  color: gray;
+  background-color: #282828;
+}
+.scroll-menu {
+  height: 320px;
+  overflow-y: scroll;
+}
+/* width */
+.scroll-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scroll-menu::-webkit-scrollbar-track {
+  background: #ac9e9e;
+}
+
+/* Handle */
+.scroll-menu.scroll-menu::-webkit-scrollbar-thumb {
+  background: rgb(71, 70, 70);
+}
+
+/* Handle on hover */
+.scroll-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.avatar ul li a.nav-link {
+  padding: 0;
+}
+.avatar ul li a.nav-link:nth-child(1) {
+  color: aqua;
+  margin-top: 10px;
+}
+.avatar ul li a.nav-link:nth-child(2) {
+  color: rgb(134, 158, 158);
+  margin-bottom: 20px !important;
+}
+
+.menu ul li.active {
+  background-color: #1f1f1f;
+  border-left: 5px solid red;
+  border-radius: 5px 0 0 5px;
+}
+
+.menu ul li.nav-item:hover {
+  background-color: #272525;
+}
+.menu ul li.nav-item:hover i{
+  color: white;
+}
+.menu ul li.nav-item:hover span{
+ color:white;
+}
+
+ul li.active a.nav-link i {
+  color: rgb(167, 99, 99) !important;
+}
+ul li.active a.nav-link span {
+  color: rgb(167, 99, 99) !important;
+  font-weight: 700;
+}
+.setting {
+  border-top: 1px solid white;
+  padding-top: 4px;
+  width: calc(100%/6 - 23px);
+border-right: 0.5px solid rgb(199, 194, 194);
+}
+main a i {
+  color: gray;
+  margin-right: 8px;
+}
+main a span {
+  color: gray;
+}
+
+main .row {
+  margin-left: -25px;
+  margin-top: -5px;
+}
