@@ -11,39 +11,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <main>
-          <div className="app">
-            <div className="app_container">
-              <div className="grid container">
-                <div className="grid__row" style={{ display: "flex" }}>
-                  <div className="grid__column-2">
-                    <Menu />
-                  </div>
-                  <div className="grid__column-8">
-                    <Banner />
-                  </div>
-                </div>
+        <div id="header">
+          <Header />
+        </div>
+        <div className="container">
+          <div id="content">
+            <div className="row">
+              <div className="col-3">
+                <Menu/>
               </div>
-            </div>
-            <div className="container">
-              <div className="container">
-                <div className="row ">
-                  <div className="list-course">
-                    <Courses />
-                  </div>
-                  <div className="list-teacher">
-                    <Teachers />
-                  </div>
-                  <div className="list-reason">
-                    <Reasons />
-                  </div>
-                </div>
+              <div className="col-9">
+                <Banner/>
               </div>
             </div>
           </div>
-        </main>
-        <Footer />
+         <div id="main">
+           
+         </div>
+        <div id="footer">
+          <Footer/>
+        </div>
+        </div>
       </div>
     );
   }

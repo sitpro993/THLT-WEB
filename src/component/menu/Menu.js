@@ -1,82 +1,51 @@
 import { Component } from "react";
-
+import "./style.css";
 class Menu extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {};
-
-    }
-    render() {
+    this.state = {};
+  }
+  render() {
+    var items = [
+      { classIcon: "fa fa-language", itemName: "Ngoại ngữ" },
+      { classIcon: "fa fa-desktop", itemName: "Tin học văn phòng" },
+      { classIcon: "fas fa-chart-line", itemName: "Marketing" },
+      { classIcon: "fa fa-paint-brush", itemName: "Thiết kế" },
+      { classIcon: "fa fa-rocket", itemName: "Kinh doanh khởi nghiệp" },
+      { classIcon: "fa fa-child", itemName: "Nuôi dạy con" },
+      { classIcon: "fa fa-shopping-cart", itemName: "Sales, bán hàng" },
+      { classIcon: "fa fa-code", itemName: " Công nghệ thông tin" },
+      { classIcon: "fa fa-heartbeat", itemName: "Sức khoẻ giới tính" },
+      { classIcon: "fa fa-camera", itemName: " Nhiếp ảnh, dựng phim" },
+    ];
+    return (
+      <table className="">
+        <tbody>
+          {this.showItems(items)}
+        </tbody>
+      </table>
+    );
+  }
+  showItems(items) {
+    if (items != null && items.length > 0) {
+      return items.map((it, id) => {
         return (
-          <nav className="category">
-            <h3 className="category__heading">Danh mục</h3>
-            <ul className="category-list">
-              <li className="category-item category-item-active">
-                <a className="category-item_link" href>
-                  <i className="fa fa-language" />
-                  Ngoại ngữ
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-desktop" />
-                  Tin học văn phòng
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fas fa-chart-line" />
-                  Marketing
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-paint-brush" />
-                  Thiết kế
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-rocket" />
-                  Kinh doanh khởi nghiệp
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-child" />
-                  Nuôi dạy con
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-shopping-cart" />
-                  Sales, bán hàng
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-code" />
-                  Công nghệ thông tin
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-heartbeat" />
-                  Sức khoẻ giới tính
-                </a>
-              </li>
-              <li className="category-item">
-                <a className="category-item_link" href>
-                  <i className="fa fa-camera" />
-                  Nhiếp ảnh, dựng phim
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <tr key={"menu" + id}>
+            <td>
+              <a className="nav-link">
+                <i className={it.classIcon} />
+              </a>
+            </td>
+            <td>
+              <a className="nav-link">{it.itemName}</a>
+            </td>
+          </tr>
         );
+      });
     }
+    return "";
+  }
 }
-
 
 export default Menu;

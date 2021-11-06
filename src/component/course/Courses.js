@@ -4,7 +4,6 @@ import CourseItem from "./CourseItem";
 class Courses extends Component {
  render() {
     var { courses } = this.props;
-    console.log("fsdfsc",courses);
     return (
       <div className="Top_pay">
         {this.showCourses(courses)}
