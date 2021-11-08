@@ -1,0 +1,61 @@
+div.card.h-100 {
+  cursor: pointer;
+}
+
+div.card.h-100:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(116, 208, 211, 0.23) 0px 3px 6px !important;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(116, 208, 211, 0.23) 0px 3px 6px !important;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+div.card.h-100 img {
+  border-radius: 5px 5px 0 0;
+}
+
+div.card.h-100 .card-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 17px;
+  letter-spacing: -0.75px;
+}
+
+div.card.h-100 .card-body {
+  padding: 10px;
+}
+
+div.card.h-100 .card-body .text-start h5 {
+  color: #333333;
+  font-weight: 700;
+}
+
+div.card.h-100 .card-body .text-start > p {
+  font-size: 13px;
+  color: #a59696;
+}
+
+div.card.h-100 .card-body .text-end del {
+  font-size: small;
+  font-weight: 600;
+  margin-right: 10px !important;
+}
+
+div.card.h-100 .card-body .text-end del sub {
+  top: 5px;
+  right: -7px;
+}
+
+div.card.h-100 .card-body .text-end p {
+  font-weight: 700;
+  margin-right: 10px !important;
+}
+
+div.card.h-100 .card-body .text-end p sub {
+  top: 5px;
+  right: -7px;
+}
+
+div.card.h-100 .card-body ul li {
+  color: #e6e620;
+  font-size: 12px;
+}
+/*# sourceMappingURL=courseItem.css.map */

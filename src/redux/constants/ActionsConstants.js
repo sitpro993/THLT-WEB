@@ -1,1 +1,1 @@
-const CLICK_MORE = "MORE_COURSE";
+export const CLICK_MORE = "MORE_COURSE";

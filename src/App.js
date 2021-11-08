@@ -5,7 +5,6 @@ import Footer from "./component/footer/Footer";
 import Reasons from "./component/footer/Reasons";
 import Header from "./component/header/Header";
 import Menu from "./component/menu/Menu";
-import Teachers from "./component/teacher/Teachers";
 
 class App extends Component {
   render() {
@@ -18,19 +17,26 @@ class App extends Component {
           <div id="content">
             <div className="row">
               <div className="col-3">
-                <Menu/>
+                <Menu />
               </div>
               <div className="col-9">
-                <Banner/>
+                <Banner />
               </div>
             </div>
           </div>
-         <div id="main">
-           
-         </div>
-        <div id="footer">
-          <Footer/>
+          <div id="main">
+            <Courses />
+          </div>
+          <div id="reason" className="mt-3">
+            <h2 className="w-75 text-center m-auto">
+              Bạn chưa tìm thấy khóa học mình quan tâm ?<br /> Unica có hơn
+              2.000 khóa học đang chờ bạn khám phá
+            </h2>
+            <Reasons />
+          </div>
         </div>
+        <div id="footer">
+          <Footer />
         </div>
       </div>
     );
