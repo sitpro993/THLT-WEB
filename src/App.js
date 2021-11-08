@@ -16,10 +16,10 @@ class App extends Component {
         <div className="container">
           <div id="content">
             <div className="row">
-              <div className="col-3">
+              <div className="col-3 d-none d-md-block">
                 <Menu />
               </div>
-              <div className="col-9">
+              <div className="col-12 col-md-9 d-xs-none">
                 <Banner />
               </div>
             </div>

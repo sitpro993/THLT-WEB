@@ -10,7 +10,7 @@ table.parent-items table.child-items {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   z-index: 200;
-  top: 30%;
+  top: 0%;
   right: -101%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
