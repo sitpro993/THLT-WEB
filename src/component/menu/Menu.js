@@ -128,9 +128,17 @@ class Menu extends Component {
               ""
             ) : (
               <table className="child-items w-2 position-absolute w-100 h-100  p-2">
-                {it.childItems.map((item,index)=>{
-                  return <tr><a className="nav-link">{item}</a></tr>
-                })}
+                <tbody>
+                  {it.childItems.map((item, index) => {
+                    return (
+                      <tr key={"child-item" + id + index}>
+                        <td>
+                          <a className="nav-link">{item}</a>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
               </table>
             )}
           </tr>

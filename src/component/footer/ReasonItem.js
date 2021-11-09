@@ -8,6 +8,7 @@ class ReasonItem extends Component {
 
     render() {
         return (
+          
           <div className="col-2 mb-2">
             <div className="reason-item w-100 m-1 text-center p-2 ">
               <i className={this.props.item.iconClass + " mt-2"} aria-hidden="true"/>
